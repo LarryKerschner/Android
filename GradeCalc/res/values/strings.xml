@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GradeCalc</string>
+    <string name="hello_world">Please select a class from the first 4 items. Press > for Status</string>
+    <string name="android">NIU Android</string>
+    <string name="cpp">NIU C++</string>
+    <string name="comparch">NIU Computer Architecture</string>
+    <string name="other">Other Class</string>
+    <string name="cl_tstpct">Class Test %Grade</string>
+    <string name="cl_asgnpct">Class Assign. %Grade</string>
+    <string name="cl_miscpct">Class Misc. %Grade</string>
+    <string name="cl_tstpts">Class Test Points</string>
+    <string name="cl_asgnpts">Class Assign. Points</string>
+    <string name="cl_miscpts">Class Misc. Points</string>
+    <string name="cl_totpts">Class Total Points</string>
+    <string name="your_tstpts">Your Test Points</string>
+    <string name="your_asgnpts">Your Assign. Points</string>
+    <string name="your_miscpts">Your Misc. Points</string>
+    <string name="numpick">1,2, &#8230;</string>
+    <string name="back">&lt;</string>
+    <string name="status">></string>
+    <string name="cancel">Cancel</string>
+    <string name="set">Set</string>
+    <string name="reset">Reset All</string>
+    <string name="zero">0</string>
+    <string name="nullstring"></string>
+    <string name="action_settings">Settings</string>
+
+</resources>
