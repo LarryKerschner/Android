@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Lines</string>
+    <string name="action_settings">Settings</string>
+    <string name="tv_explain">Two points on an X/Y axis determine a straight line. Enter X/Y coordinates for two points and press Results for the length of the line and its midpoint.</string>
+    <string name="tv_tvx1">Point 1 X=</string>
+    <string name="tv_tvy1">Point 1 Y=</string>
+    <string name="tv_tvx2">Point 2 X=</string>
+    <string name="tv_tvy2">Point 2 Y=</string>
+    <string name="button_results">Results</string>
+    <string name="button_reset">Reset</string>
+
+</resources>

@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.niu.cs.csci.lkerschner.gradecalc.MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:text="@string/hello_world" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignStart="@+id/textView1"
+        android:layout_below="@+id/textView1" >
+
+        <RadioButton
+            android:id="@+id/and"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/android" />
+
+        <RadioButton
+            android:id="@+id/cpp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cpp" />
+
+        <RadioButton
+            android:id="@+id/cas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/comparch" />
+
+        <RadioButton
+            android:id="@+id/oth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/other" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroupPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radioGroupClass"
+        android:layout_alignStart="@+id/radioGroupClass"
+        android:layout_below="@+id/radioGroupClass" >
+
+        <RadioButton
+            android:id="@+id/clTstPct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cl_tstpct" />
+
+        <RadioButton
+            android:id="@+id/clAsgnPct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cl_asgnpct" />
+
+        <RadioButton
+            android:id="@+id/clMiscPct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cl_miscpct" />
+   
+
+        <RadioButton
+            android:id="@+id/clTstPts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cl_tstpts" />
+
+        <RadioButton
+            android:id="@+id/clAsgnPts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cl_asgnpts" />
+
+        <RadioButton
+            android:id="@+id/clMiscPts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cl_miscpts" />
+   
+
+        <RadioButton
+            android:id="@+id/yrTstPts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/your_tstpts" />
+
+        <RadioButton
+            android:id="@+id/yrAsgnPts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/your_asgnpts" />
+
+        <RadioButton
+            android:id="@+id/yrMiscPts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/your_miscpts" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/radioGroupPoints"
+        android:layout_alignEnd="@+id/textView1"
+        android:layout_alignRight="@+id/status"
+        android:layout_marginBottom="40dp"
+        android:text="@string/reset" />
+
+    <Button
+        android:id="@+id/numpick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_alignEnd="@+id/textView1"
+        android:layout_alignTop="@+id/radioGroupClass"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/numpick" />
+
+    <Button
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/numpick"
+        android:layout_alignRight="@+id/numpick"
+        android:layout_below="@+id/numpick"
+        android:layout_marginTop="46dp"
+        android:text="@string/status" />
+  
+</RelativeLayout>

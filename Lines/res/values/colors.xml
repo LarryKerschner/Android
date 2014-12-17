@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="bkgrnd_red">#ff567c</color>
+    <color name="bkgrnd_blue">#899dbe</color>
+    <color name="bkgrnd_green">#74a259</color>
+</resources>

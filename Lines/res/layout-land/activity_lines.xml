@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/bkgrnd_green"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/etX1"
+        android:layout_width="154dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvX1"
+        android:layout_toRightOf="@+id/tvX1"
+        android:ems="10"
+        android:inputType="numberSigned|numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+
+ 	 <EditText
+ 	     android:id="@+id/etY1"
+ 	     android:layout_width="153dp"
+ 	     android:layout_height="wrap_content"
+ 	     android:layout_alignBaseline="@+id/tvY1"
+ 	     android:layout_alignBottom="@+id/tvY1"
+ 	     android:layout_alignParentRight="true"
+ 	     android:layout_marginRight="20dp"
+ 	     android:ems="10"
+ 	     android:inputType="numberSigned|numberDecimal" />
+
+ 	    <EditText
+ 	        android:id="@+id/etY2"
+ 	        android:layout_width="153dp"
+ 	        android:layout_height="wrap_content"
+ 	        android:layout_alignLeft="@+id/etY1"
+ 	        android:layout_below="@+id/etY1"
+ 	        android:ems="10"
+ 	        android:inputType="numberSigned|numberDecimal" />
+
+ 	    <Button
+ 	        android:id="@+id/btnResults"
+ 	        android:layout_width="wrap_content"
+ 	        android:layout_height="wrap_content"
+ 	        android:layout_alignParentLeft="true"
+ 	        android:layout_below="@+id/etX2"
+ 	        android:layout_marginTop="28dp"
+ 	        android:onClick="calclines"
+ 	        android:text="@string/button_results" />
+ 	   
+ 	      
+
+ 	    <Button
+ 	        android:id="@+id/btnReset"
+ 	        android:layout_width="wrap_content"
+ 	        android:layout_height="wrap_content"
+ 	        android:layout_alignBaseline="@+id/btnResults"
+ 	        android:layout_alignBottom="@+id/btnResults"
+ 	        android:layout_alignRight="@+id/etY2"
+ 	        android:onClick="resetall"
+ 	        android:text="@string/button_reset" />
+
+ 	    <TextView
+ 	        android:id="@+id/tvExplain"
+ 	        android:layout_width="match_parent"
+ 	        android:layout_height="wrap_content"
+ 	        android:layout_alignParentLeft="true"
+ 	        android:layout_below="@+id/btnResults"
+ 	        android:layout_marginTop="18dp"
+ 	        android:text="@string/tv_explain"
+ 	        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+ 	    <TextView
+ 	        android:id="@+id/tvX1"
+ 	        android:layout_width="wrap_content"
+ 	        android:layout_height="wrap_content"
+ 	        android:layout_alignParentTop="true"
+ 	        android:layout_alignRight="@+id/btnResults"
+ 	        android:layout_marginTop="14dp"
+ 	        android:text="@string/tv_tvx1"
+ 	        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+ 	    <TextView
+ 	        android:id="@+id/tvY1"
+ 	        android:layout_width="wrap_content"
+ 	        android:layout_height="wrap_content"
+ 	        android:layout_alignBaseline="@+id/etX1"
+ 	        android:layout_alignBottom="@+id/etX1"
+ 	        android:layout_toLeftOf="@+id/etY1"
+ 	        android:text="@string/tv_tvy1"
+ 	        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+ 	    <TextView
+ 	        android:id="@+id/tvX2"
+ 	        android:layout_width="wrap_content"
+ 	        android:layout_height="wrap_content"
+ 	        android:layout_alignTop="@+id/etY2"
+ 	        android:layout_toLeftOf="@+id/etX1"
+ 	        android:text="@string/tv_tvx2"
+ 	        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+ 	    <TextView
+ 	        android:id="@+id/tvY2"
+ 	        android:layout_width="wrap_content"
+ 	        android:layout_height="wrap_content"
+ 	        android:layout_alignBottom="@+id/etY2"
+ 	        android:layout_toLeftOf="@+id/etY2"
+ 	        android:text="@string/tv_tvy2"
+ 	        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+ 	    <EditText
+ 	        android:id="@+id/etX2"
+ 	        android:layout_width="153dp"
+ 	        android:layout_height="wrap_content"
+ 	        android:layout_alignRight="@+id/etX1"
+ 	        android:layout_alignTop="@+id/tvX2"
+ 	        android:ems="10"
+ 	        android:inputType="numberSigned|numberDecimal" />
+ 	    
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bkgrnd_blue"
+    android:orientation="vertical" >
+
+
+
+     <EditText
+         android:id="@+id/etX1"
+         android:layout_width="154dp"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_alignParentTop="true"
+         android:ems="10"
+         android:inputType="numberSigned|numberDecimal" >
+
+         <requestFocus />
+     </EditText>
+
+      <TextView
+          android:id="@+id/tvY1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_below="@+id/etX1"
+          android:textAppearance="?android:attr/textAppearanceMedium"
+          android:text="@string/tv_tvy1" />
+
+     <EditText
+         android:id="@+id/etY1"
+         android:layout_width="153dp"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/etX1"
+         android:layout_alignTop="@+id/tvY1"
+         android:ems="10"
+         android:inputType="numberSigned|numberDecimal" />
+
+      <TextView
+          android:id="@+id/tvX2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_below="@+id/etY1"
+          android:textAppearance="?android:attr/textAppearanceMedium"
+          android:text="@string/tv_tvx2" />
+
+     <EditText
+         android:id="@+id/etX2"
+         android:layout_width="153dp"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_alignTop="@+id/tvX2"
+         android:ems="10"
+         android:inputType="numberSigned|numberDecimal" />
+
+     <TextView
+         android:id="@+id/tvY2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/etX2"
+         android:textAppearance="?android:attr/textAppearanceMedium"
+         android:text="@string/tv_tvy2" />
+
+      <EditText
+          android:id="@+id/etY2"
+          android:layout_width="153dp"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_alignTop="@+id/tvY2"
+          android:ems="10"
+          android:inputType="numberSigned|numberDecimal" />
+
+      <Button
+          android:id="@+id/btnReset"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBaseline="@+id/btnResults"
+          android:layout_alignBottom="@+id/btnResults"
+          android:layout_alignRight="@+id/etY1"
+          android:onClick="resetall"
+          android:text="@string/button_reset" />
+
+      <Button
+          android:id="@+id/btnResults"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_below="@+id/etY2"
+          android:onClick="calcline"
+          android:text="@string/button_results" />
+
+      <TextView
+          android:id="@+id/tvExplain"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_below="@+id/btnResults"
+          android:layout_marginTop="14dp"
+          android:text="@string/tv_explain"
+          android:textAppearance="?android:attr/textAppearanceMedium" />
+
+      <TextView
+          android:id="@+id/tvX1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBaseline="@+id/etX1"
+          android:layout_alignBottom="@+id/etX1"
+          android:layout_alignParentLeft="true"
+          android:text="@string/tv_tvx1"
+          android:textAppearance="?android:attr/textAppearanceMedium" />
+     
+</RelativeLayout>
